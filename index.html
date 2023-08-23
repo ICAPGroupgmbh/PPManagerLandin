@@ -2,41 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>PP Manager</title>
 </head>
 <body>
 <header class="header container">
-    <div class="header__logo"></div>
+    <a href="/" class="header__logo"></a>
     <nav class="header__menu">
-        <div class="header__menu-item">Über uns</div>
-        <div class="header__menu-item">Vorteile</div>
-        <div class="header__menu-item">Preis</div>
-        <div class="header__menu-item">Kontakt</div>
+        <a class="header__menu-item uber-link">Über uns</a>
+        <a href="#vorteile" class="header__menu-item">Vorteile</a>
+        <a href="#price" class="header__menu-item">Preis</a>
+        <a href="#kontakt" class="header__menu-item">Kontakt</a>
     </nav>
 
     <div class="header__menu-btn">
         <div class="header__menu-btn--burger"></div>
     </div>
-
 </header>
-<main>
-    <section class="hero container">
+<main class="index-main active">
+    <section class="hero section">
         <div class="hero__content">
             <h1 class="hero__title">Projektmanagement Software für Solarteure</h1>
             <p class="hero_desc">Maximieren Sie die Arbeitseffizienz mit unserer branchenführenden PP Manager Software
                 zur mühelosen Optimierung von Solaranlagen.</p>
             <div class="hero__button-wrapper">
-                <a href="#" class="hero__button">Software Vorstellung buchen</a>
+                <a href="https://calendly.com/icapgroup/pv?month=2023-08" target="_blank" class="hero__button">Software Vorstellung buchen</a>
             </div>
         </div>
         <div class="hero__image"></div>
     </section>
-    <section class="advantage container">
-        <h2 class="advantage__title section__title">Kunden Vorteil in Zahlen</h2>
+    <section class="advantage section" id="vorteile">
+        <h2 class="section__title advantage__title">Kunden Vorteil in Zahlen</h2>
         <div class="advantage__content">
             <div class="advantage__logo-wrapper">
                 <img class="advantage__logo" src="./dist/images/logo2.svg" alt="logo">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section class="benefits container">
+    <section class="benefits section">
         <h2 class="benefits__title section__title">Verschaffen Sie sich einen Wettbewerbsvorteil: Entdecken Sie die
             leistungsstarken Vorteile von PP Manager</h2>
         <p class="benefits__desc section__desc">Mit PP Manager immer einen Schritt voraus: Sie bauen bereits, während
@@ -137,13 +137,15 @@
             </div>
         </div>
     </section>
-    <section class="angebot">
+    <section class="angebot section container">
         <h2 class="angebot__title section__title">Erstellen Sie in nur 4 Minuten ein Angebot für Ihre Kunden</h2>
         <div class="angebot__content"></div>
     </section>
-    <section class="effiziente">
-        <h2 class="effiziente__title section__title">Effiziente Projektaktivitäten dank schrittweiser Projektplanung spart Projektleiter 3,5 Stunden</h2>
-        <p class="effiziente__desc section__desc">Planen Sie Ihre Projektaktivitäten mit einem 5-stufigen Planungssystem, mit dem Sie immer den Überblick behalten</p>
+    <section class="effiziente section">
+        <h2 class="effiziente__title section__title">Effiziente Projektaktivitäten dank schrittweiser Projektplanung
+            spart Projektleiter 3,5 Stunden</h2>
+        <p class="effiziente__desc section__desc">Planen Sie Ihre Projektaktivitäten mit einem 5-stufigen
+            Planungssystem, mit dem Sie immer den Überblick behalten</p>
         <div class="effiziente__content container">
             <div class="effiziente__content-card">
                 <img class="effiziente__content-card-image" src="./dist/images/step1.svg" alt="Step 1">
@@ -163,14 +165,17 @@
                 <img class="effiziente__content-card-image" src="./dist/images/step1.svg" alt="Step 1">
                 <div class="effiziente__content-card-text">
                     <h4 class="effiziente__content-card-title">Schritt 3</h4>
-                    <p class="effiziente__content-card-desc">Materalien mit Lager abgleichen und <bestellen></bestellen></p>
+                    <p class="effiziente__content-card-desc">Materalien mit Lager abgleichen und
+                        <bestellen></bestellen>
+                    </p>
                 </div>
             </div>
             <div class="effiziente__content-card">
                 <img class="effiziente__content-card-image" src="./dist/images/step1.svg" alt="Step 1">
                 <div class="effiziente__content-card-text">
                     <h4 class="effiziente__content-card-title">Schritt 4</h4>
-                    <p class="effiziente__content-card-desc">Mitarbeiter und Subunternehmer Aufgaben zuteilen und koordinieren</p>
+                    <p class="effiziente__content-card-desc">Mitarbeiter und Subunternehmer Aufgaben zuteilen und
+                        koordinieren</p>
                 </div>
             </div>
             <div class="effiziente__content-card">
@@ -207,7 +212,9 @@
                             <img class="effiziente__content-card-image" src="./dist/images/step1.svg" alt="Step 1">
                             <div class="effiziente__content-card-text">
                                 <h4 class="effiziente__content-card-title">Schritt 3</h4>
-                                <p class="effiziente__content-card-desc">Materalien mit Lager abgleichen und <bestellen></bestellen></p>
+                                <p class="effiziente__content-card-desc">Materalien mit Lager abgleichen und
+                                    <bestellen></bestellen>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -216,7 +223,8 @@
                             <img class="effiziente__content-card-image" src="./dist/images/step1.svg" alt="Step 1">
                             <div class="effiziente__content-card-text">
                                 <h4 class="effiziente__content-card-title">Schritt 4</h4>
-                                <p class="effiziente__content-card-desc">Mitarbeiter und Subunternehmer Aufgaben zuteilen und koordinieren</p>
+                                <p class="effiziente__content-card-desc">Mitarbeiter und Subunternehmer Aufgaben
+                                    zuteilen und koordinieren</p>
                             </div>
                         </div>
                     </div>
@@ -230,13 +238,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <section class="excel container">
+    <section class="excel section container">
         <h2 class="excel__title section__title">Schluss mit Excel!</h2>
         <p class="excel__desc section__desc">Alle wichtigen Informationen sind jetzt an einem Ort</p>
         <div class="excel__content">
@@ -276,7 +282,323 @@
             </div>
         </div>
     </section>
+    <section class="stats section container">
+        <h2 class="stats__title section__title">Verbesserte Anpassung der PP Manager Software, nahtlose Integration in
+            die einzigartigen Systeme der Kunden</h2>
+        <div class="stats__content">
+            <img class="stats__content-image first" src="./dist/images/stats.svg" alt="stats">
+            <img class="stats__content-image second" src="./dist/images/stats2.svg" alt="stats">
+        </div>
+    </section>
+    <section class="price section" id="price">
+        <h2 class="price__title section__title">Preis</h2>
+        <div class="price__content">
+            <div class="price__content-block">
+                <div class="price__content-block-subtitle">Monatlicher Plan</div>
+                <h3 class="price__content-block-title">80 € pro Monat pro <br> Projektmanager</h3>
+                <p class="price__content-block-desc">zzgl. MwSt.</p>
+                <div class="price__content-block-advantages">
+                    <div class="price__content-block-advantage">
+                        <img class="advantage__image" src="./dist/images/checkbox.svg" alt="include Basissoftware">
+                        <p class="advantage__name">Basissoftware</p>
+                    </div>
+                    <div class="price__content-block-advantage">
+                        <img class="advantage__image exclude" src="./dist/images/exclude.svg"
+                             alt="exclude Individualisierung extra">
+                        <p class="advantage__name">Individualisierung extra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price__content-block">
+                <div class="price__content-block-subtitle">Jahresplan</div>
+                <h3 class="price__content-block-title">80 € pro Monat pro <br> Projektmanager</h3>
+                <p class="price__content-block-desc">zzgl. MwSt.</p>
+                <div class="price__content-block-advantages">
+                    <div class="price__content-block-advantage">
+                        <img class="advantage__image" src="./dist/images/checkbox.svg" alt="include Basissoftware">
+                        <p class="advantage__name">Basissoftware</p>
+                    </div>
+                    <div class="price__content-block-advantage">
+                        <img class="advantage__image" src="./dist/images/checkbox.svg" alt="exclude Drei Arbeitstage Individualisierung
+                            kostenlos">
+                        <p class="advantage__name">Drei Arbeitstage Individualisierung
+                            kostenlos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+<main class="uber-main">
+    <section class="uber section container">
+        <h2 class="uber__title section__title">Über uns</h2>
+        <p class="uber__desc section__desc">Wir bringen Unternehmen ins digitale Zeitalter! Wir digitalisieren,
+            optimieren und automatisieren die Prozesse Ihres Unternehmens und sparen Ihnen so erhebliche Zeit für
+            repetitive, überflüssige Verwaltungs- und Administrationsaufgaben. Zusätzlich unterstützen wir Ihren
+            Vertrieb mit leistungsstarken Analysetools und eine Infrastruktur, die Ihre Conversionrate in die Höhe
+            treibt.
+            <br>
+            <br>
+            Die ICAP Group GmbH stellt ihre innovative Projektmanagement Software für Solarteure - sorgfältig
+            entwickelt, um die Arbeitsabläufe von Solarteuren zu optimieren. Diese Software wurde mit einem ausgeprägten
+            Verständnis für die besonderen Bedürfnisse von Solarinstallateuren entwickelt und bietet eine umfassende
+            Lösung zur Verbesserung der Effizienz des Projektmanagements. Verabschieden Sie sich von manuellen Prozessen
+            und begrüßen Sie die automatisierte Planung, Ressourcenzuweisung und Aufgabenverfolgung. </p>
+    </section>
+    <section class="team section container">
+        <h2 class="team__title section__title">Treffen Sie unser Team von Fachleuten</h2>
+
+        <div class="team__content">
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Volker Hütter</h4>
+                <p class="team__person-position">Gründer und Geschäftsführer</p>
+                <p class="team__person-email">volkerhuetter@icapgroupgmbh.com</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-1.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Daniil Rudenko</h4>
+                <p class="team__person-position">Technischer Leiter</p>
+                <p class="team__person-email">daniil.rudenko@icapgroupgmbh.com</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-2.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Vladyslav Ovsepian</h4>
+                <p class="team__person-position">Projektmanagement Leiter</p>
+                <p class="team__person-email">vladyslav.ovsepian@icapgroupgmbh.com</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-3.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Yana Petrova</h4>
+                <p class="team__person-position">UX/UI Designer</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-4.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Denys Stoliarchuk</h4>
+                <p class="team__person-position">UX/UI Designer</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-5.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Vladyslav Onishchuk</h4>
+                <p class="team__person-position">Back-End Entwickler</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-6.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Roman Shevchuk</h4>
+                <p class="team__person-position">Front-End Entwickler</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-7.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Oleksandr Sylko</h4>
+                <p class="team__person-position">Front-End Entwickler</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-8.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Anton Kiselevych</h4>
+                <p class="team__person-position">Front-End Entwickler</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-9.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Denys Postolnyi</h4>
+                <p class="team__person-position">Android Entwickler</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-10.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Niklas Hütter</h4>
+                <p class="team__person-position">E-Commerce Logistik & Assistenz <br> der Geschäftsführung</p>
+            </div>
+            <div class="team__person">
+                <div class="team__person-avatar-wrapper">
+                    <img src="./dist/images/Ellipse-11.svg" alt="Volker Hütter" class="team__person-avatar">
+                </div>
+                <h4 class="team__person-name">Oussama Aariba</h4>
+                <p class="team__person-position">Werbung & Assistenz der Geschäftsführung</p>
+            </div>
+        </div>
+        <div class="team__slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Volker Hütter</h4>
+                            <p class="team__person-position">Gründer und Geschäftsführer</p>
+                            <p class="team__person-email">volkerhuetter@icapgroupgmbh.com</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-1.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Daniil Rudenko</h4>
+                            <p class="team__person-position">Technischer Leiter</p>
+                            <p class="team__person-email">daniil.rudenko@icapgroupgmbh.com</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-2.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Vladyslav Ovsepian</h4>
+                            <p class="team__person-position">Projektmanagement Leiter</p>
+                            <p class="team__person-email">vladyslav.ovsepian@icapgroupgmbh.com</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-3.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Yana Petrova</h4>
+                            <p class="team__person-position">UX/UI Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-4.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Denys Stoliarchuk</h4>
+                            <p class="team__person-position">UX/UI Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-5.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Vladyslav Onishchuk</h4>
+                            <p class="team__person-position">Back-End Entwickler</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-6.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Roman Shevchuk</h4>
+                            <p class="team__person-position">Front-End Entwickler</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-7.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Oleksandr Sylko</h4>
+                            <p class="team__person-position">Front-End Entwickler</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-8.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Anton Kiselevych</h4>
+                            <p class="team__person-position">Front-End Entwickler</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-9.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Denys Postolnyi</h4>
+                            <p class="team__person-position">Android Entwickler</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-10.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Niklas Hütter</h4>
+                            <p class="team__person-position">E-Commerce Logistik & Assistenz <br> der Geschäftsführung</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="team__person">
+                            <div class="team__person-avatar-wrapper">
+                                <img src="./dist/images/Ellipse-11.svg" alt="Volker Hütter" class="team__person-avatar">
+                            </div>
+                            <h4 class="team__person-name">Oussama Aariba</h4>
+                            <p class="team__person-position">Werbung & Assistenz der Geschäftsführung</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer container" id="kontakt">
+    <div class="footer__content">
+        <div class="footer__content-column">
+            <img class="footer__logo" src="./dist/images/logo3.svg" alt="PP Manager logo">
+            <p class="footer__content-column-text">Melden Sie sich für eine PP Manager-Präsentation an und erfahren Sie
+                alles über die Vorteile. </p>
+            <a href="https://calendly.com/icapgroup/pv?month=2023-08" target="_blank" class="footer__content-column-button">Software Vorstellung buchen</a>
+        </div>
+        <div class="footer__content-column">
+            <h4 class="footer__content-title">Kontaktieren Sie uns</h4>
+            <img class="footer__icap-logo" src="./dist/images/logoIcap.svg" alt="ICAP Group GmbH logo">
+            <div class="footer__content-column-contact">
+                <img class="contact-icon" src="./dist/images/location.svg" alt="location icon">
+                <p class="footer__content-column-contact-text">ICAP Group GmbH, Krummlandstraße 22, 74081 Heilbronn
+                    Deutschland</p>
+            </div>
+            <div class="footer__content-column-contact">
+                <img class="contact-icon" src="./dist/images/email.svg" alt="email icon">
+                <p class="footer__content-column-contact-text">info@icapgroupgmbh.com</p>
+            </div>
+            <div class="footer__content-column-contact">
+                <img class="contact-icon" src="./dist/images/phone.svg" alt="phone icon">
+                <p class="footer__content-column-contact-text">07131 3829180</p>
+            </div>
+        </div>
+        <div class="footer__content-column">
+            <a href="#" class="footer__content-column-link uber-link">Über uns</a>
+            <a href="#vorteile" class="footer__content-column-link">Vorteile</a>
+            <a href="#price" class="footer__content-column-link">Preis</a>
+        </div>
+    </div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./dist/js/scripts-min.js"></script>
 </body>

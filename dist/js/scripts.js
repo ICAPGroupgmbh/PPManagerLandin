@@ -18,14 +18,6 @@ window.addEventListener('resize', () => {
 
 
 
-const links = document.querySelectorAll('a');
-
-links.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-    })
-})
-
 
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
@@ -35,9 +27,49 @@ const swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 });
 
+
+
+
+const linkToUber = document.querySelectorAll('.uber-link');
+const indexPage = document.querySelector('.index-main');
+const uberPage = document.querySelector('.uber-main');
+const menuLink = document.querySelectorAll('.header__menu-item');
+const header__logo = document.querySelector('.header__logo');
+
+
+
+header__logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    indexPage.classList.add("active");
+    uberPage.classList.remove("active");
+    menuLink.forEach(btn => btn.classList.remove('active'));
+});
+
+
+
+linkToUber.forEach(link => {
+    link.addEventListener('click', () => {
+        if (indexPage.classList.contains("active")){
+            indexPage.classList.remove("active");
+            uberPage.classList.add("active")
+        } else {
+            indexPage.classList.add("active");
+            uberPage.classList.remove("active")
+        }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+menuLink.forEach(button => {
+    button.addEventListener('click', (e) => {
+        menuLink.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        headerNav.classList.remove('active');
+        burgerButton.classList.toggle('open');
+    });
+});
