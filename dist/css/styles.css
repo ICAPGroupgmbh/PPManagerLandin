@@ -1427,7 +1427,7 @@ section {
     background: #FFFFFF;
     max-width: 960px;
     position: fixed;
-    top: 58vh;
+    bottom: 1%;
     right: 50%;
     transform: translateX(50%);
     z-index: 9914123;
@@ -1438,6 +1438,7 @@ section {
 @media (max-width: 670px) {
     .banner__wrapper{
         width: 70%;
+
     }
 }
 .banner__wrapper.disabled{
