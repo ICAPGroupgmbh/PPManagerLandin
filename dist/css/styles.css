@@ -1404,7 +1404,8 @@ section {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #fff
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 .footer__content-column .footer__content-column-link {
@@ -1513,6 +1514,18 @@ section {
 .banner__secondary-btn-additional a{
     color: #6A994E;
 }
+
+.banner__closeIcon{
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+    
+    @media (max-width: 668px) {
+        right: 3%;
+    }
+}
+
 .overlay.active{
     position: fixed;
     top: 0;

@@ -1,3 +1,4 @@
+
 const burgerButton = document.querySelector('.header__menu-btn');
 const headerNav = document.querySelector('.header__menu');
 
@@ -124,6 +125,7 @@ window.addEventListener("load", () => {
         mainIndex.insertAdjacentHTML("beforebegin",
             `
                 <div class="banner__wrapper">
+                    <img src="../../dist/images/close.svg" class="banner__closeIcon" alt="close modal">
                     <div class="banner__title">Wir schätzen Ihre Privatsphäre</div>
                     <div class="banner__text">Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern und personalisierte Inhalte bereitzustellen. Wenn Sie auf "Alle Cookies akzeptieren" klicken, stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Nutzung der Website zu analysieren, unsere Dienste zu verbessern und Ihnen relevante Werbung anzuzeigen.</div>
                     <div class="banner__btn-container">
@@ -138,6 +140,7 @@ window.addEventListener("load", () => {
         )
         document.querySelector(".banner__main-btn").addEventListener("click", closeCookiesHandler);
         document.querySelector(".banner__secondary-btn").addEventListener("click", closeCookiesHandler);
+        document.querySelector(".banner__closeIcon").addEventListener("click", closeCookiesHandler);
 
     }
 })
