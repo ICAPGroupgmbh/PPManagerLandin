@@ -133,7 +133,7 @@ window.addEventListener("load", () => {
                         <div class="banner__secondary-btn-additional">
                                 <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DAndroid" target="_blank">Cookie-Einstellungen</a>
                         </div>
-                        <div class="banner__secondary-btn">Schließen</div>
+                        <div class="banner__secondary-btn">Ablehnen</div>
                     </div>
                 </div>
               `
