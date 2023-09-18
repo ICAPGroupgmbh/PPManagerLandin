@@ -1140,7 +1140,8 @@ section {
     row-gap: 32px;
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
-    column-gap: 32px
+    column-gap: 32px;
+    padding-bottom: 15px;
 }
 
 @media (max-width: 800px) {
@@ -1150,6 +1151,7 @@ section {
 }
 
 .team__person {
+    border-radius: 10px;
     padding: 40px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
