@@ -130,16 +130,13 @@ window.addEventListener("load", () => {
                     <div class="banner__text">Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern und personalisierte Inhalte bereitzustellen. Wenn Sie auf "Alle Cookies akzeptieren" klicken, stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Nutzung der Website zu analysieren, unsere Dienste zu verbessern und Ihnen relevante Werbung anzuzeigen.</div>
                     <div class="banner__btn-container">
                         <div class="banner__main-btn">Alle Cookies akzeptieren</div>
-                        <div class="banner__secondary-btn-additional">
-                                <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DAndroid" target="_blank">Cookie-Einstellungen</a>
-                        </div>
+                       
                         <div class="banner__secondary-btn">Ablehnen</div>
                     </div>
                 </div>
               `
         )
         document.querySelector(".banner__main-btn").addEventListener("click", closeCookiesHandler);
-        document.querySelector(".banner__secondary-btn").addEventListener("click", closeCookiesHandler);
         document.querySelector(".banner__closeIcon").addEventListener("click", closeCookiesHandler);
 
     }
